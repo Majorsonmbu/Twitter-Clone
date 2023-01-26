@@ -135,11 +135,9 @@ body {
     width: calc(100vw - 900px);
     border-right: 1px solid grey;
     height: 100vh;
+    overflow-y: scroll;
 }
 
-.twitter-app .general-section {
-    
-}
 
 .main-container .nav {
     display: flex;
@@ -238,3 +236,183 @@ body {
 
 
 /* TWEETS POSTCARD STYLING */
+.post-card {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 456px;
+   /* background-color: pink;*/
+}
+
+.post-card .post-card-separator {
+    display: flex;
+    height: 100%;
+    padding-top: 11px;
+}
+
+.post-card .post-card-separator i {
+   padding-right: 5px;
+}
+
+.post-card .post-card-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card .post-card-details .sender-username {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgb(15, 20, 25);
+    cursor: pointer;
+    font-family: TwitterChirp ;
+    padding-right: 6px;
+    padding-left: 16px;
+}
+
+.post-card .post-card-details .sender-handle {
+    color: rgb(83, 100, 113);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    font-family: TwitterChirp;
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+.post-card-heading {
+    display: flex;
+}
+
+.post-card-caption {
+    color: rgb(15, 20, 25);
+    font-size: 23px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: TwitterChirp;
+    width: 90%;
+    padding-left: 16px;
+}
+
+.tweet-image {
+    padding-left: 16px;
+    width: 90%;
+}
+
+.tweet-image {
+    height: 350.288px;
+    overflow-y: clip;
+    overflow-x: clip;
+    z-index: -1;
+    width: 564px;
+}
+
+
+/* GENERAL SECTION STYLING */
+.general-section {
+    padding-left: 17px;
+    padding-top: 8px;
+    padding-right: 17px;
+    padding-bottom: 17px;
+}
+
+
+.general-section .searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 15px 7px 7px;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 350px;
+    height: 44.4px ;
+    border-top-left-radius: 9999px;
+    border-top-right-radius: 9999px;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    background-color: rgb(239, 243, 244);
+
+}
+
+.general-section .searchbox input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: TwitterChirp;
+    padding-left: 11px;
+    background-color: rgb(239, 243, 244) ;
+}
+
+.general-section .trends-box {
+    width: 348px;
+    height: 880px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(239, 243, 244);
+    border: 1px solid rgb(239, 243, 244);
+
+}
+
+.general-section .trends-box .trends-caption {
+    padding: 12px 16px 12px 16px;
+    height: 48px;
+}
+
+.general-section .trends-box .trends-caption h3 {
+    font-size: 15px;
+    font-weight: 400px;
+    color: rgb(0, 0, 0);
+}
+
+.trends-box .trend-item {
+    width: 100%;
+    padding: 6px 6px 22px 6px;
+    height: 82px;
+    cursor: pointer;
+}
+
+.trends-box .trend-item:hover {
+    background-color: lightgrey;
+}
+
+.trends-box .trend-item .trend-specifics {
+    display: flex;
+    flex-direction: column;
+}
+
+.trends-box .trend-item .trend-region {
+    display: flex;
+}
+
+.trends-box .trend-item .trend-region .region {
+    padding: 0 6px;
+}
+
+.trends-box .trend-item .trend-specifics .trend-region .region p{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(83, 100, 113);
+    font-family: TwitterChirp;
+    line-height: 16px;
+}
+
+.trends-box .trend-item .trend-specifics .trend-title{
+    padding: 0 6px;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.trends-box .trend-item .trend-specifics .num-tweets{
+    padding: 0 6px;
+    line-height: 16px;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: TwitterChirp;
+    color: rgb(83, 100, 113);
+}
